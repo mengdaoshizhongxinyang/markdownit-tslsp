@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            margin: 0;
+            height: 100%;
+        }
+        .main{
+            display: flex;
+            height: 100%;
+        }
+        .main>div{
+            flex: 1;
+            height: 100%;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div id="left"></div>
+        <div id="right"></div>
+    </div>
+    <script type="module" src="./main.ts"></script>
+</body>
+</html>

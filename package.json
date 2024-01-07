@@ -1,0 +1,19 @@
+{
+  "name": "markdown-it-type-plugin",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite serve ./example"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/markdown-it": "^13.0.7",
+    "highlight.js": "^11.9.0",
+    "markdown-it": "^14.0.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11"
+  }
+}
