@@ -4,23 +4,31 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vite serve ./example --config ./vite.config.ts"
+    "dev": "vite serve ./example --config ./vite.config.ts --host"
   },
+  "type": "module",
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/html-escaper": "^3.0.2",
     "@types/markdown-it": "^13.0.7",
     "@types/node": "^20.10.7",
     "highlight.js": "^11.9.0",
     "markdown-it": "^14.0.0",
     "typescript": "^5.3.3",
-    "vite": "^5.0.11",
-    "vite-plugin-top-level-await": "^1.4.1",
-    "vite-plugin-wasm": "^3.3.0"
+    "vite": "^5.0.11"
   },
   "dependencies": {
+    "@floating-ui/dom": "^1.6.3",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "@vue/babel-plugin-jsx": "1.2.0-alpha.0",
+    "html-escaper": "^3.0.3",
+    "unplugin-vue-markdown": "^0.26.0",
+    "vite-plugin-md": "^0.21.5",
     "vscode-oniguruma": "^2.0.1",
-    "vscode-textmate": "^9.0.0"
+    "vscode-textmate": "^9.0.0",
+    "vue": "^3.4.20"
   }
 }

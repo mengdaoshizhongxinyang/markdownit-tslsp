@@ -1,0 +1,758 @@
+.post-default {
+  color:#303133;
+  width:750px;
+  flex-grow:0;
+  box-shadow:0 1px 3px #ccc;
+  flex-shrink:0;
+  background-color:#fff
+}
+@media only screen and (min-width: 1000px) {
+  .post-default {
+    width:750px
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .post-default {
+    width:100%
+  }
+}
+.post-default.post-no-toc {
+  width:100%
+}
+.post-default .post-header {
+  height:50px;
+  display:flex;
+  align-items:center;
+  border-bottom:1px solid rgb(221,221,221);
+  justify-content:space-between
+}
+.post-default .post-header-title {
+  color:#303133;
+  margin:0;
+  padding:0;
+  font-size:28px
+}
+.post-default .post-header-create {
+  color:#909399;
+  font-size:12px;
+  font-family:Lato,-apple-system,BlinkMacSystemFont,PingFang SC,思源黑体,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,Microsoft YaHei,sans-serif;
+  font-weight:400
+}
+.post-default .post-article {
+  font-size:14px
+}
+@media only screen and (min-width: 1000px) {
+  .post-default .post-article {
+    padding:16px 24px
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .post-default .post-article {
+    padding:16px 14px
+  }
+}
+.post-default .post-article h1 {
+  font-size:1.6em;
+  margin-top:1.1em;
+  margin-bottom:.8em
+}
+.post-default .post-article h2 {
+  font-size:1.4em;
+  margin-top:1em;
+  margin-bottom:.75em
+}
+.post-default .post-article h3 {
+  font-size:1.2em;
+  margin-top:.9em;
+  margin-bottom:.7em
+}
+.post-default .post-article h4 {
+  font-size:1em;
+  margin-top:.8em;
+  margin-bottom:.65em
+}
+.post-default .post-article h5 {
+  font-size:.8em;
+  margin-top:.7em;
+  margin-bottom:.6em
+}
+.post-default .post-article h1,
+.post-default .post-article h2,
+.post-default .post-article h3,
+.post-default .post-article h4,
+.post-default .post-article h5 {
+  display:flex;
+  position:relative;
+  align-items:center
+}
+.post-default .post-article span.post-soft-break {
+  width:2em;
+  display:inline-block
+}
+.post-default .post-article>*:first-child {
+  margin-top:0!important
+}
+.post-default .post-article p {
+  margin:0 0 .8em;
+  line-height:1.7;
+  text-indent:2em
+}
+.post-default .post-article code {
+  top:-1.5px;
+  margin:0 .2em;
+  padding:.2em;
+  position:relative;
+  font-size:.85em;
+  border-bottom:.1em solid rgb(255,234,167);
+  border-radius:2px;
+  background-color:#fef9ed
+}
+.post-default .post-article em {
+  margin:0 3px;
+  font-style:normal;
+  text-shadow:-1px -1px 0 #fafafa,1px -1px 0 rgb(247,247,247),-1px 1px 0 rgb(247,247,247),1px 1px rgb(247,247,247);
+  text-decoration:none;
+  background-image:linear-gradient(to top,transparent,transparent 0px,rgb(144,147,153) 0px,rgb(144,147,153) 1px,transparent 1px)
+}
+.post-default .post-article s {
+  text-decoration-color:#20202080
+}
+.post-default .post-article small {
+  font-size:.8em
+}
+.post-default .post-article sub,
+.post-default .post-article sup {
+  position:relative;
+  font-size:.8em;
+  line-height:0;
+  margin-right:.2em;
+  vertical-align:baseline
+}
+.post-default .post-article sup {
+  top:-.5em
+}
+.post-default .post-article sub {
+  bottom:-.3em
+}
+.post-default .post-article a {
+  color:#17519999;
+  cursor:pointer;
+  transition:color .2s,background .4s;
+  text-decoration:none
+}
+.post-default .post-article ul,
+.post-default .post-article ol {
+  line-height:1.4;
+  margin-left:.4em;
+  padding-left:1.5em
+}
+.post-default .post-article blockquote {
+  margin:1em 0;
+  padding:.8em 1.2em;
+  font-size:90%;
+  border-left:.3em solid hsl(220,10.5%,73.8%);
+  line-height:1.5;
+  background-color:#f7f7f7
+}
+.post-default .post-article table {
+  width:max-content;
+  margin:0 auto .8em;
+  display:block;
+  overflow:auto;
+  max-width:100%;
+  border-spacing:0;
+  border-collapse:collapse
+}
+.post-default .post-article hr {
+  border:none;
+  height:2px;
+  margin:18px 0;
+  padding:0;
+  overflow:hidden;
+  box-sizing:content-box;
+  border-bottom:1px solid rgb(221,221,221);
+  background-color:#ddd
+}
+.post-default .post-article table tr {
+  border-top:1px solid hsl(210,18%,87%);
+  background-color:#fff
+}
+.post-default .post-article table tbody tr:nth-child(2n+1) {
+  background-color:#f6f9fa
+}
+.post-default .post-article table th,
+.post-default .post-article table td {
+  border:1px solid rgb(208,215,222);
+  padding:6px 13px
+}
+.post-default .post-article table th {
+  font-weight:600
+}
+.post-default .post-article a:hover,
+.post-default .post-article a:focus {
+  color:#175199;
+  outline:0
+}
+.post-default .post-article p:last-child {
+  margin-bottom:0
+}
+.post-default .post-article p.no-indent {
+  text-indent:0
+}
+@media only screen and (min-width: 1000px) {
+  .post-default .post-article h1,
+  .post-default .post-article h2,
+  .post-default .post-article h3,
+  .post-default .post-article h4,
+  .post-default .post-article h5 {
+    margin-left:-24px;
+    margin-right:-24px
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .post-default .post-article h1,
+  .post-default .post-article h2,
+  .post-default .post-article h3,
+  .post-default .post-article h4,
+  .post-default .post-article h5 {
+    margin-left:-14px;
+    margin-right:-14px
+  }
+}
+.post-default .post-article h1 .post-anchor,
+.post-default .post-article h2 .post-anchor,
+.post-default .post-article h3 .post-anchor,
+.post-default .post-article h4 .post-anchor,
+.post-default .post-article h5 .post-anchor {
+  color:#606266;
+  width:24px;
+  cursor:pointer;
+  opacity:0;
+  font-size:.8em;
+  box-sizing:border-box;
+  text-align:center;
+  transition:opacity .2s
+}
+.post-default .post-article h1:hover .post-anchor,
+.post-default .post-article h2:hover .post-anchor,
+.post-default .post-article h3:hover .post-anchor,
+.post-default .post-article h4:hover .post-anchor,
+.post-default .post-article h5:hover .post-anchor {
+  opacity:1
+}
+@media only screen and (min-width: 1000px) {
+  .post-default .post-header {
+    margin:0 24px
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .post-default .post-header {
+    margin:0 14px
+  }
+}
+.post-image-box {
+  margin:14px 0;
+  max-width:100%;
+  text-align:center
+}
+.post-image-box .post-image-alt {
+  color:#606266;
+  margin:12px 0;
+  font-size:12px;
+  text-align:center;
+  font-weight:300;
+  line-height:1.5
+}
+.post-image-box .post-image-inner {
+  cursor:zoom-in;
+  max-width:100%
+}
+.to-content {
+  color:#303133;
+  width:230px;
+  padding:0 14px;
+  position:absolute;
+  flex-grow:0;
+  font-size:14px;
+  box-shadow:0 1px 3px #ccc;
+  box-sizing:border-box;
+  flex-shrink:0;
+  margin-left:770px;
+  background-color:#fff
+}
+@media only screen and (max-width: 1000px) {
+  .to-content {
+    display:none
+  }
+}
+.to-content .menu-list-header {
+  padding:8px 0;
+  border-bottom:1px solid rgb(240,242,247)
+}
+.to-content .menu-list {
+  padding:0;
+  list-style:none
+}
+.to-content .menu-icon {
+  font-size:6px;
+  margin-right:3px
+}
+.to-content .menu-item {
+  margin-top:4px
+}
+.to-content .menu-item-highlight>a {
+  color:#69c0ff
+}
+.to-content a {
+  color:#303133;
+  display:flex;
+  transition:color .1s linear;
+  align-items:center;
+  text-decoration:none
+}
+.to-content code {
+  margin:0 .2em;
+  padding:.1em;
+  font-size:.85em;
+  border-radius:4px;
+  background-color:#fef9ed
+}
+.to-content code:first-child {
+  margin-left:-.2em
+}
+.to-content .menu-item.menu-level1 {
+  font-size:14px
+}
+.to-content .menu-item.menu-level2 {
+  font-size:12px
+}
+.to-content .menu-list .menu-list {
+  transition:border-color .1s linear;
+  border-left:1px solid rgb(221,221,221);
+  margin-left:3px;
+  padding-left:14px;
+  margin-bottom:4px
+}
+.to-content .menu-list .menu-list.menu-list-highlight {
+  border-color:#606266
+}
+pre code.hljs {
+  display:block;
+  overflow-x:auto;
+  padding:1em
+}
+code.hljs {
+  padding:3px 5px
+}
+.hljs {
+  color:#383a42;
+  background:#fafafa
+}
+.hljs-comment,
+.hljs-quote {
+  color:#a0a1a7;
+  font-style:italic
+}
+.hljs-doctag,
+.hljs-formula,
+.hljs-keyword {
+  color:#a626a4
+}
+.hljs-deletion,
+.hljs-name,
+.hljs-section,
+.hljs-selector-tag,
+.hljs-subst {
+  color:#e45649
+}
+.hljs-literal {
+  color:#0184bb
+}
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta .hljs-string,
+.hljs-regexp,
+.hljs-string {
+  color:#50a14f
+}
+.hljs-attr,
+.hljs-number,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-pseudo,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable {
+  color:#986801
+}
+.hljs-bullet,
+.hljs-link,
+.hljs-meta,
+.hljs-selector-id,
+.hljs-symbol,
+.hljs-title {
+  color:#4078f2
+}
+.hljs-built_in,
+.hljs-class .hljs-title,
+.hljs-title.class_ {
+  color:#c18401
+}
+.hljs-emphasis {
+  font-style:italic
+}
+.hljs-strong {
+  font-weight:700
+}
+.hljs-link {
+  text-decoration:underline
+}
+.code-block-wrapper {
+  margin:.8em 0;
+  position:relative;
+  font-size:.9em;
+  text-shadow:none;
+  background-color:transparent
+}
+@media only screen and (max-width: 1000px) {
+  .code-block-wrapper {
+    margin-left:-14px;
+    margin-right:-14px
+  }
+}
+.code-block-wrapper .code-block-label {
+  top:4px;
+  color:#b7b7b7;
+  right:4px;
+  position:absolute;
+  font-size:.8em;
+  background-color:transparent
+}
+.code-block-wrapper code.code-block-list {
+  border:0;
+  margin:0;
+  display:flex;
+  padding:0;
+  position:initial;
+  flex-wrap:nowrap;
+  white-space:inherit;
+  overflow-wrap:normal;
+  flex-direction:row;
+  background-color:transparent
+}
+.code-block-wrapper .code-block-box {
+  display:inline-flex;
+  flex-grow:1;
+  overflow-x:auto;
+  flex-shrink:1
+}
+.code-block-wrapper .code-block-split {
+  width:1px;
+  height:100%;
+  position:absolute;
+  background-color:#ddd
+}
+.code-block-wrapper .code-block-highlight-line {
+  background-color:#c0c4cc
+}
+@media only screen and (max-width: 1000px) {
+  .code-block-wrapper .code-block-box::-webkit-scrollbar {
+    width:4px;
+    height:4px
+  }
+  .code-block-wrapper .code-block-box::-webkit-scrollbar-track {
+    box-shadow:inset 0 0 2px #0000004d
+  }
+  .code-block-wrapper .code-block-box::-webkit-scrollbar-thumb {
+    box-shadow:inset 0 0 2px #0000004d
+  }
+}
+.code-block-wrapper .code-block-box .code-block-code {
+  color:#606266;
+  margin:0;
+  padding:.4em 0;
+  flex-grow:1;
+  flex-shrink:0;
+  list-style-type:none;
+  background-color:#f7f7f7;
+  border-top-right-radius:4px;
+  border-bottom-right-radius:4px
+}
+@media only screen and (max-width: 1000px) {
+  .code-block-wrapper .code-block-box .code-block-code {
+    border-top-left-radius:0;
+    border-bottom-left-radius:0
+  }
+}
+.code-block-wrapper .code-block-box .code-block-code>li {
+  margin:0;
+  padding:0 .4em;
+  position:relative;
+  line-height:1.3
+}
+.code-block-wrapper .code-block-box .code-block-code>li:after {
+  content:" "
+}
+.code-block-wrapper code.code-block-list ul.code-block-gutter {
+  float:left;
+  margin:0;
+  padding:.4em 0;
+  flex-grow:0;
+  flex-shrink:0;
+  list-style-type:none;
+  background-color:#e7e7e7;
+  border-top-left-radius:4px;
+  border-bottom-left-radius:4px
+}
+@media only screen and (max-width: 1000px) {
+  .code-block-wrapper code.code-block-list ul.code-block-gutter {
+    border-top-left-radius:0;
+    border-bottom-left-radius:0
+  }
+}
+.code-block-wrapper code.code-block-list ul.code-block-gutter>li {
+  margin:0;
+  padding:0 .5em 0 .4em;
+  text-align:left;
+  line-height:1.3
+}
+.code-block-ls:hover [ls-info] {
+  border-color:#747474
+}
+.code-block-ls [ls-info] {
+  transition:border-color .3s;
+  border-bottom:1px dotted transparent;
+  transition-timing-function:ease
+}
+.code-block-ls [class*=lsp-keyword],
+.code-block-ls [class*=lsp-storage-type],
+.code-block-ls [class*=lsp-storage-modifier] {
+  color:#a626a4
+}
+.code-block-ls [class*=lsp-keyword-operator] {
+  color:#0184bc
+}
+.code-block-ls [class*=lsp-string-quoted] {
+  color:#50a155
+}
+.code-block-ls [class*=lsp-comment] {
+  color:#a0a1a7;
+  font-style:italic
+}
+.code-block-ls [class*=lsp-support-type] {
+  color:#0184bc
+}
+.code-block-ls .lsp-constant-numeric-decimal,
+.code-block-ls .lsp-constant-numeric-decimalx {
+  color:#986801
+}
+.code-block-ls .lsp-meta-import.lsp-constant-language-import-export-all,
+.code-block-ls .lsp-meta-import.lsp-variable-other-readwrite-alias,
+.code-block-ls .lsp-meta-importx.lsp-constant-language-import-export-allx,
+.code-block-ls .lsp-meta-importx.lsp-variable-other-readwrite-aliasx {
+  color:#e4564f
+}
+.code-block-ls .lsp-string-template,
+.code-block-ls .lsp-string-templatex {
+  color:#50a155
+}
+.code-block-ls .lsp-string-regexp,
+.code-block-ls .lsp-string-regexpx {
+  color:#0184c4
+}
+.code-block-ls .lsp-entity-name-tag,
+.code-block-ls .lsp-entity-name-tagx {
+  color:#4078f2
+}
+.code-block-ls .lsp-entity-other-attribute-name,
+.code-block-ls .lsp-entity-other-attribute-namex,
+.code-block-ls .lsp-constant-language-boolean-false,
+.code-block-ls .lsp-constant-language-boolean-true {
+  color:#986801
+}
+.code-block-ls .lsp-meta-function-call,
+.code-block-ls .lsp-meta-function-callx {
+  color:#4078f2
+}
+.code-block-ls .lsp-support-variable-property-dom,
+.code-block-ls .lsp-support-variable-property,
+.code-block-ls .lsp-variable-other-property {
+  color:#e4564f
+}
+.code-block-ls .lsp-support-class-console,
+.code-block-ls .lsp-support-constant-math {
+  color:#986801!important
+}
+.code-block-ls .lsp-meta-function-call.lsp-variable-other-object,
+.code-block-ls .lsp-meta-function-call.lsp-variable-other-objectx,
+.code-block-ls .lsp-meta-function-callx.lsp-variable-other-object,
+.code-block-ls .lsp-meta-function-callx.lsp-variable-other-objectx {
+  color:#383a42
+}
+.code-block-ls .lsp-string-template.lsp-punctuation-definition-template-expression-begin,
+.code-block-ls .lsp-string-template.lsp-punctuation-definition-template-expression-end,
+.code-block-ls .lsp-string-templatex.lsp-punctuation-definition-template-expression-begin,
+.code-block-ls .lsp-string-templatex.lsp-punctuation-definition-template-expression-end {
+  color:#ca1243
+}
+.code-block-ls .lsp-meta-var-expr.lsp-variable-other-constant,
+.code-block-ls .lsp-meta-var-expr.lsp-variable-other-constantx,
+.code-block-ls .lsp-meta-var-exprx.lsp-variable-other-constant,
+.code-block-ls .lsp-meta-var-exprx.lsp-variable-other-constantx {
+  color:#c18401
+}
+.code-block-ls .lsp-meta-var-expr.lsp-meta-type-annotation.lsp-entity-name-type,
+.code-block-ls .lsp-meta-var-expr.lsp-meta-type-annotation.lsp-entity-name-typex,
+.code-block-ls .lsp-meta-var-expr.lsp-meta-type-annotationx.lsp-entity-name-type,
+.code-block-ls .lsp-meta-var-expr.lsp-meta-type-annotationx.lsp-entity-name-typex,
+.code-block-ls .lsp-meta-var-exprx.lsp-meta-type-annotation.lsp-entity-name-type,
+.code-block-ls .lsp-meta-var-exprx.lsp-meta-type-annotation.lsp-entity-name-typex,
+.code-block-ls .lsp-meta-var-exprx.lsp-meta-type-annotationx.lsp-entity-name-type,
+.code-block-ls .lsp-meta-var-exprx.lsp-meta-type-annotationx.lsp-entity-name-typex {
+  color:#986801
+}
+.code-block-ls .lsp-meta-array-literal.lsp-meta-brace-square,
+.code-block-ls .lsp-meta-array-literal.lsp-meta-brace-squarex,
+.code-block-ls .lsp-meta-array-literalx.lsp-meta-brace-square,
+.code-block-ls .lsp-meta-array-literalx.lsp-meta-brace-squarex {
+  color:#87cefa
+}
+.code-block-ls .lsp-meta-objectliteral.lsp-meta-object-literal-key,
+.code-block-ls .lsp-meta-objectliteral.lsp-variable-other-property,
+.code-block-ls .lsp-meta-objectliteral.lsp-variable-other-object-property,
+.code-block-ls .lsp-meta-objectliteralx.lsp-meta-object-literal-key,
+.code-block-ls .lsp-meta-objectliteralx.lsp-variable-other-property,
+.code-block-ls .lsp-meta-objectliteralx.lsp-variable-other-object-property {
+  color:#e4564f
+}
+.code-block-ls .lsp-meta-function.lsp-meta-definition-function.lsp-entity-name-function,
+.code-block-ls .lsp-meta-function.lsp-meta-definition-functionx.lsp-entity-name-functionx,
+.code-block-ls .lsp-meta-function-expression.lsp-meta-definition-function.lsp-entity-name-function,
+.code-block-ls .lsp-meta-function-expression.lsp-meta-definition-functionx.lsp-entity-name-functionx,
+.code-block-ls .lsp-meta-functionx.lsp-meta-definition-function.lsp-entity-name-function,
+.code-block-ls .lsp-meta-functionx.lsp-meta-definition-functionx.lsp-entity-name-functionx,
+.code-block-ls .lsp-meta-function-expressionx.lsp-meta-definition-function.lsp-entity-name-function,
+.code-block-ls .lsp-meta-function-expressionx.lsp-meta-definition-functionx.lsp-entity-name-functionx {
+  color:#4078f2
+}
+.code-block-ls .lsp-meta-function.lsp-entity-name-type-module,
+.code-block-ls .lsp-meta-function.lsp-entity-name-type-modulex,
+.code-block-ls .lsp-meta-function-expression.lsp-entity-name-type-module,
+.code-block-ls .lsp-meta-function-expression.lsp-entity-name-type-modulex,
+.code-block-ls .lsp-meta-functionx.lsp-entity-name-type-module,
+.code-block-ls .lsp-meta-functionx.lsp-entity-name-type-modulex,
+.code-block-ls .lsp-meta-function-expressionx.lsp-entity-name-type-module,
+.code-block-ls .lsp-meta-function-expressionx.lsp-entity-name-type-modulex {
+  color:#e4564f
+}
+.code-block-ls .lsp-meta-function.lsp-entity-name-type,
+.code-block-ls .lsp-meta-function.lsp-entity-name-typex,
+.code-block-ls .lsp-meta-function-expression.lsp-entity-name-type,
+.code-block-ls .lsp-meta-function-expression.lsp-entity-name-typex,
+.code-block-ls .lsp-meta-functionx.lsp-entity-name-type,
+.code-block-ls .lsp-meta-functionx.lsp-entity-name-typex,
+.code-block-ls .lsp-meta-function-expressionx.lsp-entity-name-type,
+.code-block-ls .lsp-meta-function-expressionx.lsp-entity-name-typex {
+  color:#c18401
+}
+.code-block-ls .lsp-meta-function.lsp-meta-type-function-return,
+.code-block-ls .lsp-meta-function.lsp-meta-type-function-returnx,
+.code-block-ls .lsp-meta-function-expression.lsp-meta-type-function-return,
+.code-block-ls .lsp-meta-function-expression.lsp-meta-type-function-returnx,
+.code-block-ls .lsp-meta-functionx.lsp-meta-type-function-return,
+.code-block-ls .lsp-meta-functionx.lsp-meta-type-function-returnx,
+.code-block-ls .lsp-meta-function-expressionx.lsp-meta-type-function-return,
+.code-block-ls .lsp-meta-function-expressionx.lsp-meta-type-function-returnx,
+.code-block-ls .lsp-meta-interface.lsp-storage-modifier,
+.code-block-ls .lsp-meta-interface.lsp-storage-modifierx,
+.code-block-ls .lsp-meta-interfacex.lsp-storage-modifier,
+.code-block-ls .lsp-meta-interfacex.lsp-storage-modifierx {
+  color:#a626a4
+}
+.code-block-ls .lsp-meta-interface.lsp-entity-name-type-interface,
+.code-block-ls .lsp-meta-interface.lsp-entity-other-inherited-class,
+.code-block-ls .lsp-meta-interface.lsp-entity-name-type,
+.code-block-ls .lsp-meta-interface.lsp-entity-name-type-interfacex,
+.code-block-ls .lsp-meta-interface.lsp-entity-other-inherited-classx,
+.code-block-ls .lsp-meta-interface.lsp-entity-name-typex,
+.code-block-ls .lsp-meta-interfacex.lsp-entity-name-type-interface,
+.code-block-ls .lsp-meta-interfacex.lsp-entity-other-inherited-class,
+.code-block-ls .lsp-meta-interfacex.lsp-entity-name-type,
+.code-block-ls .lsp-meta-interfacex.lsp-entity-name-type-interfacex,
+.code-block-ls .lsp-meta-interfacex.lsp-entity-other-inherited-classx,
+.code-block-ls .lsp-meta-interfacex.lsp-entity-name-typex {
+  color:#c18401
+}
+.code-block-ls .lsp-meta-interface.lsp-entity-name-type-module,
+.code-block-ls .lsp-meta-interface.lsp-entity-name-type-modulex,
+.code-block-ls .lsp-meta-interfacex.lsp-entity-name-type-module,
+.code-block-ls .lsp-meta-interfacex.lsp-entity-name-type-modulex {
+  color:#e4564f
+}
+.code-block-ls .lsp-meta-interface.lsp-meta-definition-method.lsp-entity-name-function,
+.code-block-ls .lsp-meta-interface.lsp-meta-definition-methodx.lsp-entity-name-functionx,
+.code-block-ls .lsp-meta-interfacex.lsp-meta-definition-method.lsp-entity-name-function,
+.code-block-ls .lsp-meta-interfacex.lsp-meta-definition-methodx.lsp-entity-name-functionx {
+  color:#4078f2
+}
+.code-block-ls .lsp-meta-interface.lsp-punctuation-definition-parameters-begin,
+.code-block-ls .lsp-meta-interface.lsp-punctuation-definition-parameters-end,
+.code-block-ls .lsp-meta-interfacex.lsp-punctuation-definition-parameters-begin,
+.code-block-ls .lsp-meta-interfacex.lsp-punctuation-definition-parameters-end {
+  color:orchid
+}
+.ls-info-box {
+  color:#383a42;
+  border:1px solid rgb(221,221,221);
+  padding:4px 6px;
+  position:fixed;
+  font-size:12px;
+  transform:translateY(14px);
+  box-shadow:0 0 6px #0003;
+  font-family:Menlo,Monaco,Consolas,Courier New,monospace;
+  line-height:1.5em;
+  background-color:#f0f2f7
+}
+.ls-info-box pre {
+  margin:0;
+  white-space:pre-wrap
+}
+.ls-info-box .keyword {
+  color:#a626a4
+}
+.ls-info-box .operator {
+  color:#0184bc
+}
+.ls-info-box .numericLiteral,
+.ls-info-box .localName {
+  color:#986801
+}
+.ls-info-box .stringLiteral,
+.ls-info-box .aliasName {
+  color:#50a14f
+}
+.ls-info-box .className,
+.ls-info-box .interfaceName {
+  color:#c98401
+}
+.ls-info-box .functionName,
+.ls-info-box .methodName {
+  color:#4078f2
+}
+.ls-info-box .propertyName,
+.ls-info-box .enumName,
+.ls-info-box .enumMemberName {
+  color:#e45649
+}
+.icon-box {
+  color:inherit;
+  display:inline-block;
+  font-style:normal;
+  text-align:center;
+  line-height:0;
+  text-rendering:optimizelegibility;
+  text-transform:none
+}
+.icon-box svg {
+  display:inline-block
+}

@@ -1,4 +1,4 @@
-import * as ts from "typescript"
+import ts from "typescript"
 
 interface CodeFile {
     name: string;
@@ -35,6 +35,7 @@ function displayPartsToString(tokens: ts.SymbolDisplayPart[]) {
 
     return encodeURI(JSON.stringify(result));
 }
+let tsServer:TsServer
 export class TsServer {
     private readonly scriptKind = 'ts';
 
@@ -42,7 +43,7 @@ export class TsServer {
 
     private readonly server: ts.LanguageService;
 
-    private readonly files = new Set<string>();
+    readonly files = new Set<string>();
 
     private current!: CodeFile;
 
@@ -52,20 +53,19 @@ export class TsServer {
         this.setFile('');
         this.server = ts.createLanguageService(this.createLanguageServiceHost());
     }
-
     private getScriptSnapshot(code: string): ts.IScriptSnapshot {
         return {
-            getText: (start, end) => code.substring(start, end),
-            getLength: () => code.length,
-            getChangeRange: () => void 0,
+          getText: (start, end) => code.substring(start, end),
+          getLength: () => code.length,
+          getChangeRange: () => void 0,
         };
     }
 
     private getCurrentName() {
-        return `./_template.${this.scriptKind}`
+        return `_template.${this.scriptKind}`
     }
 
-    private getAllFileNames() {
+    getAllFileNames() {
         if (this.current) {
             this.files.add(this.current.name)
         }
@@ -115,9 +115,11 @@ export class TsServer {
                 if (filePath === this.current?.name) {
                     return this.current.snapshot;
                 } else if (cache[filePath]) {
+                    
                     this.files.add(filePath);
                     return cache[filePath].snapshot;
                 } else {
+                    
                     const fileText = ts.sys.readFile(filePath) ?? '';
                     const file: CodeFile = {
                         name: filePath,
@@ -128,7 +130,6 @@ export class TsServer {
 
                     this.files.add(filePath);
                     cache[filePath] = file;
-
                     return file.snapshot;
                 }
             },
@@ -167,7 +168,6 @@ export class TsServer {
 
     getQuickInfoAtPosition(offset: number) {
         const infos = this.server.getQuickInfoAtPosition(this.current.name, offset);
-
         if (!infos || !infos.displayParts) {
             return '';
         }
@@ -176,7 +176,10 @@ export class TsServer {
     }
 }
 
+export function initTsServer(){
+    tsServer = new TsServer();
+    tsServer.getAllFileNames()
+}
 export function getTsServer() {
-    const server = new TsServer();
-    return server;
+    return tsServer
 }
